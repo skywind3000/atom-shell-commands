@@ -1,15 +1,19 @@
 {
   "name": "Atom-Shell-Commands",
-  "main": "./lib/atom-shell-commands",
   "version": "0.1.0",
-  "description": "A short description of your package",
-  "keywords": [],
+  "description": "User defined shell commands for atom (based on atom-user-commands)",
+  "main": "./lib/atom-shell-commands",  
+  "keywords": [
+	  "build",
+	  "command",
+	  "parameters",
+	  "user",
+	  "run",
+	  "shell"
+  ],
   "homepage": "https://github.com/skywind3000/atom-shell-commands",
   "dependencies": {
     "win-spawn": "^2.0.0"
-  },
-  "activationCommands": {
-    "atom-workspace": "atom-shell-commands:toggle"
   },
   "repository": "https://github.com/skywind3000/atom-shell-commands",
   "license": "MIT",
