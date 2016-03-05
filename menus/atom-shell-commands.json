@@ -1,0 +1,13 @@
+{
+    "menu" : [
+        {
+            "label": "Packages",
+            "submenu": [
+                {
+                    "label": "Atom User Commands",
+                    "submenu": []
+                }
+            ]
+        }
+    ]
+}

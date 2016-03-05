@@ -4,5 +4,29 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.atom-shell-commands {
+.atom-shell-commands-console {
+	font-family: 'consolas', 'monospace';
+	padding: 10px;
+	margin: 2px 6px 2px 0;
+	border: 1px solid @pane-item-border-color;
+	white-space: pre-line;
+	background-color: @inset-panel-background-color;
+	max-height: 24em;
+	overflow-y: scroll;
+}
+
+.hide {
+	display: none;
+}
+
+.stdout {
+	color: @text-color;
+}
+
+.stderr {
+	color: @text-color-warning;
+}
+
+.echo {
+	color: @text-color-info
 }
