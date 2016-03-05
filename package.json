@@ -1,15 +1,15 @@
 {
   "name": "Atom-Shell-Commands",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "User defined shell commands for atom (based on atom-user-commands)",
-  "main": "./lib/atom-shell-commands",  
+  "main": "./lib/atom-shell-commands",
   "keywords": [
-	  "build",
-	  "command",
-	  "parameters",
-	  "user",
-	  "run",
-	  "shell"
+    "build",
+    "command",
+    "parameters",
+    "user",
+    "run",
+    "shell"
   ],
   "homepage": "https://github.com/skywind3000/atom-shell-commands",
   "dependencies": {
