@@ -62,13 +62,73 @@ The 'options' field can be:
 | env | Key/value based system environment setting |
 
 Examples
-----
+--------
+Compiling with command 'gcc'
+![](https://github.com/skywind3000/atom-shell-commands/blob/master/images/command_compile.png?raw=true)
 
+Running with command 'execute'
+![](https://github.com/skywind3000/atom-shell-commands/blob/master/images/command_execute.png?raw=true)
+
+command 'execute' config:
+```cson
+      {
+        name: "execute"
+        selector: "atom-workspace"
+        command: "{FileNameWithoutExt}"
+        options:
+          cwd: "{FileDir}"
+      }
+```
+
+Running in a new window
+![](https://github.com/skywind3000/atom-shell-commands/blob/master/images/command_runinwindow.png?raw=true)
+
+command 'runinwindow' config:
+```cson
+      {
+        name: "runinwindow"
+        selector: "atom-workspace"
+        command: "cmd"
+        arguments: [
+          "/C"
+          "start"
+          "d:/software/atom/launch.cmd"
+          "{FileNameWithoutExt}"
+        ]
+        options:
+          cwd: "{FileDir}"
+      }
+```
+
+you need to write a batch file in windows to open a new window, here is source of launch.cmd:
+```
+@echo off
+%1
+pause
+exit
+```
+
+Bottom panel control
+--------------------
+- *"atom-shell-commands-config: up"*  to increase the size of bottom panel.
+- *"atom-shell-commands-config: down"*  to decrease the size of bottom panel.
+- *"atom-shell-commands-config: clear"*  to clear the text of bottom panel.
+- *"atom-shell-commands-config: hide"*  to hide the bottom panel.
+
+Each command can be binded to a keymap or launched from the command palette. Drag-to-resize is still developing in progress.
+
+Misc
+----
+atom-shell-commands has been tested in windows, mac os and ubuntu. 
 
 TO-DO
 -----
-Resizable bottom panel (current version require execute atom-shell-commands-config:up / down in command palette)
-Click filename in output panel will open the file.
+- Resizable bottom panel (current version require execute atom-shell-commands-config:up / down in command palette)
+- Click filename in output panel will open the file.
 
 
+
+Reference
+---------
+atom-shell-commands is based on [https://github.com/DPISA/atom-user-commands](https://github.com/DPISA/atom-user-commands "atom-user-commands") with more features and bug fixes.
 
