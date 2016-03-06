@@ -1,6 +1,6 @@
 {
   "name": "Atom-Shell-Commands",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "User defined shell commands for atom (based on atom-user-commands)",
   "main": "./lib/atom-shell-commands",
   "keywords": [
