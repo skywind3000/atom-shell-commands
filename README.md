@@ -60,6 +60,7 @@ The 'options' field can be:
 |---------|-------------|
 | cwd | Working directory of the command |
 | env | Key/value based system environment setting |
+| save | True or false(default) to save the current file before execute |
 
 Examples
 --------
