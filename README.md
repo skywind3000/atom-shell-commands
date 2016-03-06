@@ -119,7 +119,7 @@ Each command can be binded to a keymap or launched from the command palette. Dra
 
 Misc
 ----
-atom-shell-commands has been tested in windows, mac os and ubuntu. 
+atom-shell-commands has been tested in windows, mac os and ubuntu. You can use 'open' in mac os or '/usr/bin/gnome-terminal' in ubuntu to open a new window and execute your executable.
 
 TO-DO
 -----
