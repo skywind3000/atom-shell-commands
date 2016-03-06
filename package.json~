@@ -1,0 +1,59 @@
+{
+  "name": "Atom-Shell-Commands",
+  "version": "0.5.0",
+  "description": "User defined shell commands for atom (based on atom-user-commands)",
+  "main": "./lib/atom-shell-commands",
+  "keywords": [
+    "build",
+    "command",
+    "parameters",
+    "user",
+    "run",
+    "shell"
+  ],
+  "homepage": "https://github.com/skywind3000/atom-shell-commands",
+  "dependencies": {
+    "win-spawn": "^2.0.0"
+  },
+  "repository": "https://github.com/skywind3000/atom-shell-commands",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/skywind3000/atom-shell-commands/issues"
+  },
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "win-spawn",
+        "version": "2.0.0",
+        "path": "node_modules/win-spawn/index.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib/atom-shell-commands.js",
+        "lib/config.js",
+        "node_modules/win-spawn/index.js"
+      ],
+      ".json": [
+        "node_modules/win-spawn/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "menus",
+          ""
+        ],
+        "dependencies": {
+          "win-spawn": "^2.0.0"
+        }
+      }
+    ]
+  }
+}
