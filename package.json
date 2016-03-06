@@ -1,7 +1,7 @@
 {
   "name": "atom-shell-commands",
   "version": "0.6.1",
-  "description": "User defined shell commands for atom (based on atom-user-commands)",
+  "description": "Customize shell commands for atom. Similar to 'Shell Commands' in TextMate, 'User Tool' in EditPlus/UltraEdit, 'External Tool' in GEdit and 'Run Commands' in NotePad++. ",
   "main": "./lib/atom-shell-commands",
   "keywords": [
     "build",
