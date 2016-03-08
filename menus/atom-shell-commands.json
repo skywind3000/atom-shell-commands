@@ -4,7 +4,7 @@
             "label": "Packages",
             "submenu": [
                 {
-                    "label": "Atom User Commands",
+                    "label": "Atom Shell Commands",
                     "submenu": []
                 }
             ]
