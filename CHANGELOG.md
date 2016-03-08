@@ -1,7 +1,7 @@
 ## 1.1.0 - Child Process Management
 * Child processes can be stop now.
 * Add child process return value prompt.
-* Fixed empty string issue in config file.
+* Fixed empty parameter item issue in config file.
 
 ## 1.0.0 - More Stable
 * Add keymap option in the config file.
