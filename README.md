@@ -199,7 +199,8 @@ TO-DO
 Reference
 ---------
 
-- [https://github.com/DPISA/atom-user-commands](https://github.com/DPISA/atom-user-commands "atom-user-commands"): atom-shell-commands is based on it.
-- [https://github.com/joefitzgerald/go-plus](https://github.com/joefitzgerald/go-plus): MessagePanel in go-plus is referenced in atom-shell-command.
-- [https://github.com/noseglid/atom-build](https://github.com/noseglid/atom-build): Error matching in XRegMatch is referenced in atom-shell-command. 
+- [https://github.com/DPISA/atom-user-commands](https://github.com/DPISA/atom-user-commands "atom-user-commands") (based on it).
+- [https://github.com/joefitzgerald/go-plus](https://github.com/joefitzgerald/go-plus) (referenced).
+- [https://github.com/noseglid/atom-build](https://github.com/noseglid/atom-build) (referenced).
+- [https://github.com/ksxatompackages/cmd-exec](https://github.com/ksxatompackages/cmd-exec) (referenced).
 
