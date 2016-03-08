@@ -44,7 +44,18 @@ Configure commands on your config file (File->Open Your Config, or ~/.atom/confi
       }
     ]
 ```
-This will create the atom command "atom-shell-commands:compile" that you can now launch from the command palette or use the binding keymap 'ctrl-2'. It also generates an entry in the Atom Shell Commands menu under packages. The `command`, `arguments` and `options` values accepts the variables below:
+This will create the atom command "atom-shell-commands:compile" that you can now launch from the command palette or use the binding keymap 'ctrl-2'. It also generates an entry in the Atom Shell Commands menu under packages. A certain command is represented by:
+
+| Field | Mode | Description |
+|-------|----|---------|
+| name | **[required]** | The name of the target. Viewed in the menu | 
+| command | **[required]** | The executable command |
+| auguments | *[optional]* | An array of arguments for the command |
+| selector | *[optional]* | atom selector, default is 'atom-workspace' |
+| matchs | *[optional]* | regular expression to match file name in output |
+| options | *[optional]* | additional options to config dir, environment, keymap etc |
+
+The `command`, `arguments` and `options` values accepts the variables below:
 
 | Macros           | Description |
 |------------------|-------------|
@@ -60,25 +71,17 @@ This will create the atom command "atom-shell-commands:compile" that you can now
 | {CurSelected}    | Selected text |
 | {CurLineText}    | Current line text |
 
-You can setup as many commands as you like to build with your project makefile, or compile a single source file directly, or just invoke grep in the current directory. A certain command is represented by the fileds below:
+You can setup as many commands as you like to build with your project makefile, or compile a single source file directly, or just invoke grep in the current directory. 
 
-| Field | Mode | Description |
-|-------|----|---------|
-| name | required | The name of the target. Viewed in the menu | 
-| selector | optional | atom selector, default is 'atom-workspace' |
-| command | required | The executable command |
-| auguments | optional | An array of arguments for the command |
-| matchs | optional | regular expression to match file name in output |
-| options | optional | additional options to config dir, environment, keymap etc |
 
 The `options` field is an key/value object contains:
 
 | Options | Mode | Description |
 |---------|------|-------|
-| cwd | optional | Working directory of the command |
-| env | optional | Key/value based system environment setting |
-| save | optional | True or false(default) to save the current file before execute |
-| keymap | optional | A keymap string as defined by Atom. Pressing this key combination will trigger the target. Examples: ctrl-alt-k or cmd-U. |
+| cwd | *[optional]* | Working directory of the command |
+| env | *[optional]* | Key/value based system environment setting |
+| save | *[optional]* | True or false(default) to save the current file before execute |
+| keymap | *[optional]* | A keymap string as defined by Atom. Pressing this key combination will trigger the target. Examples: ctrl-alt-k or cmd-U. |
 
 Examples
 --------
