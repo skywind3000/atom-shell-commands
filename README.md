@@ -74,7 +74,7 @@ You can setup as many commands as you like to build with your project makefile, 
 The `options` field is an key/value object contains:
 
 | Options | Mode | Description |
-|---------|-------------|
+|---------|------|-------|
 | cwd | optional | Working directory of the command |
 | env | optional | Key/value based system environment setting |
 | save | optional | True or false(default) to save the current file before execute |
