@@ -17,10 +17,11 @@ Feature
 - User Keymap config can makes shortcut to each shell command.
 - Shell output (stdout/stderr) can be captured in the bottom panel.
 - Click the filename in the output bottom panel will open it.
-- Regular expression to match filename and line number in the error output could be set.  
+- Regular expression to match filename and line number in the error output. 
+- All platform supported, well tested in Windows/Ubuntu/Mac OS X. 
 
-Install
--------
+Installation
+------------
     apm install atom-shell-commands
 
 Setup
@@ -71,7 +72,7 @@ The `command`, `arguments` and `options` values accepts the variables below:
 | {CurSelected}    | Selected text |
 | {CurLineText}    | Current line text |
 
-You can setup as many commands as you like to build with your project makefile, or compile a single source file directly, or just invoke grep in the current directory. 
+You can setup as many commands as you wish to build with your project makefile, or compile a single source file directly, or just run grep in current directory. 
 
 
 The `options` field is an key/value object contains:
@@ -79,9 +80,9 @@ The `options` field is an key/value object contains:
 | Options | Mode | Description |
 |---------|------|-------|
 | cwd | *[optional]* | Working directory of the command |
-| env | *[optional]* | Key/value based system environment setting |
 | save | *[optional]* | True or false(default) to save the current file before execute |
 | keymap | *[optional]* | A keymap string as defined by Atom. Pressing this key combination will trigger the target. Examples: ctrl-alt-k or cmd-U. |
+| env | *[optional]* | Key/value based system environment setting |
 
 Examples
 --------
@@ -98,7 +99,6 @@ command 'execute' config:
 ```cson
       {
         name: "execute"
-        selector: "atom-workspace"
         command: "{FileNameNoExt}"
         options:
           cwd: "{FileDir}"
@@ -113,7 +113,6 @@ command 'runinwindow' config:
 ```cson
       {
         name: "runinwindow"
-        selector: "atom-workspace"
         command: "cmd"
         arguments: [
           "/C"
@@ -155,7 +154,7 @@ The following named groups can be matched from the output:
   * `line` - *[optional]* the line the error resides on. `(?<line> RE)`.
   * `col` - *[optional]* the column the error resides on. `(?<col> RE)`.
 
-Since the regular expressions are written in a JSON file, backslashes must be escaped.
+Since the regular expressions are written in the user config file as .cson format, backslashes must be escaped.
 
 The `file` should be an absolute path, or relative the `cwd` specified. If no `cwd` has been specified, default value '/' will be used.
 
@@ -167,7 +166,6 @@ Example user config file which is using error matching:
     commands: [
       {
         name: "compile"
-        selector: "atom-workspace"
         command: "d:/dev/mingw/bin/gcc"
         arguments: [
           "{FileName}"
