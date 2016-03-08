@@ -5,10 +5,10 @@
   "main": "./lib/atom-shell-commands",
   "keywords": [
     "build",
-    "command",
+    "compile",
+    "make",
     "user",
-    "run",
-    "shell"
+    "tool"
   ],
   "homepage": "https://github.com/skywind3000/atom-shell-commands",
   "dependencies": {
