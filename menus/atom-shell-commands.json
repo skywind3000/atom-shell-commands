@@ -6,7 +6,8 @@
                 {
                     "label": "Atom Shell Commands",
                     "submenu": [
-                        
+                        { "label": "Stop", "command": "atom-shell-commands-config:stop" },
+                        { "type": "separator" }
                     ]
                 }
             ]
