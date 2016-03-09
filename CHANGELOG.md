@@ -1,5 +1,5 @@
 ## 1.1.11 - 2016/3/9
-* New 'stop' item in menu to stop child processes
+* New 'stop' command in menu to stop child processes
 
 ## 1.1.10 - New Relase
 * New white-space:pre in the style of the bottom panel to avoid space issue.
