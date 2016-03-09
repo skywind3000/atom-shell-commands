@@ -49,12 +49,12 @@ This will create the atom command "atom-shell-commands:compile" that you can now
 
 | Field | Mode | Description |
 |-------|----|---------|
-| name | **[required]** | The name of the target. Viewed in the menu | 
-| command | **[required]** | The executable command |
-| auguments | *[optional]* | An array of arguments for the command |
-| selector | *[optional]* | atom selector, default is 'atom-workspace' |
-| matchs | *[optional]* | regular expression to match file name in output |
-| options | *[optional]* | additional options to config dir, environment, keymap etc |
+| `name` | **[required]** | The name of the target. Viewed in the menu | 
+| `command` | **[required]** | The executable command |
+| `auguments` | *[optional]* | An array of arguments for the command |
+| `selector` | *[optional]* | atom selector, default is 'atom-workspace' |
+| `matchs` | *[optional]* | regular expression to match file name in output |
+| `options` | *[optional]* | additional options to config dir, environment, keymap etc |
 
 The `command`, `arguments` and `options` values accepts the variables below:
 
