@@ -5,7 +5,9 @@
             "submenu": [
                 {
                     "label": "Atom Shell Commands",
-                    "submenu": []
+                    "submenu": [
+                        
+                    ]
                 }
             ]
         }

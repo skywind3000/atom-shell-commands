@@ -1,3 +1,8 @@
+## 1.1.10 - New Relase
+* New white-space:pre in the style of the bottom panel to avoid space issue.
+* New document about error match.
+* Simplify some module.
+
 ## 1.1.0 - Child Process Management
 * Child processes can be stop now.
 * Add child process return value prompt.
