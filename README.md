@@ -4,7 +4,7 @@ Customize shell commands for atom. Similar to 'Run Commands' in NotePad++, 'User
 
 Preface
 -------
-This package enables you to setup shell commands as atom commands. Shell output will be captured and display in the atom's bottom panel.If you create a command named 'gcc-build', you will find 'atom-shell-commands:gcc-build' in the atom command palette, and then use `keymap` to setup a shotcut for it.
+This package enables you to setup shell commands as atom commands. Shell output will be captured and display in the atom's bottom panel.If you create a command named 'gcc-build', you will find 'atom-shell-commands:gcc-build' in the atom command palette, and then use keymap to setup a shotcut for it.
 
 I was a window user and switched to Atom from EditPlus/Notepad++. Previously I wrote a script in EditPlus to compile-run my C/C++ programs and execute Makefiles with customizable compile flags and run options. Atom has numerous community packages and I have tried some. Most of them are really great in certain extent but still cannot fully satisfy my need. Therefore I decided to reference their packages and make my own.
 
