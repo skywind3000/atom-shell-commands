@@ -1,3 +1,8 @@
+## 1.1.19 - 2016/3/13
+* Fixed exception when save=true in a untitled file.
+* Fixed {ProjectDir} becomes "null" when a file isn't in any project.
+* Update document.
+
 ## 1.1.11 - 2016/3/9
 * New 'stop' command in menu to stop child processes
 
