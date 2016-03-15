@@ -72,7 +72,7 @@ The `command`, `arguments` and `options` values accepts the variables below:
 | {CurSelected}    | Selected text |
 | {CurLineText}    | Current line text |
 
-You can setup as many commands as you wish to build with your project makefile, or compile a single source file directly, or just run grep in current directory. 
+You can setup as many commands as you wish to build with your project makefile, or compile a single source file directly, or run grep in current directory, or just call svn diff with current file and redirect the output to the bottom panel.
 
 
 The `options` field is an key/value object contains:
