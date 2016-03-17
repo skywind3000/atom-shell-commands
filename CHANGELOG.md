@@ -1,4 +1,4 @@
-## 1.1.21 - 2016/3/17
+## 1.2.0 - 2016/3/17
 * Reduce loading time from 140ms to 2ms by using delay initializing and other optimizes.
 * Update document.
 
