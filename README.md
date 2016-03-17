@@ -14,11 +14,12 @@ Feature
 - Customize shell command to invoke compiler or other tools with active document/project.
 - Customize arguments, working directory and system environment of the command.
 - Automatic create atom command for each shell command.
-- User Keymap config can makes shortcut to each shell command.
+- User Keymap config can make shortcut to each shell command.
 - Shell output (stdout/stderr) can be captured in the bottom panel.
 - Click the filename in the output bottom panel will open it.
 - Regular expression to match filename and line number in the error output. 
 - All platform supported, well tested in Windows/Ubuntu/Mac OS X. 
+- Fast and lightweight, loading time is less than 2 milliseconds (TimeCop). 
 
 Installation
 ------------
@@ -189,7 +190,7 @@ This will match the `file`, `line` and `col` in both clang/gcc or msvc error out
 
 Misc
 ----
-atom-shell-commands has been tested in windows, mac os and ubuntu. You can use 'open' in mac os or '/usr/bin/gnome-terminal' in ubuntu to open a new window and execute your executable.
+atom-shell-commands has been tested in windows, mac os and ubuntu. You can use 'open' in mac os or '/usr/bin/gnome-terminal' in ubuntu to open a new window and execute your command.
 
 TO-DO
 -----

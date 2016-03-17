@@ -1,3 +1,7 @@
+## 1.1.21 - 2016/3/17
+* Reduce loading time from 140ms to 2ms by using delay initializing and other optimizes.
+* Update document.
+
 ## 1.1.19 - 2016/3/13
 * Fixed exception when save=true in a untitled file.
 * Fixed {ProjectDir} becomes "null" when a file isn't in any project.
