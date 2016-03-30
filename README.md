@@ -137,7 +137,7 @@ exit
 
 Lookup word in manual
 
-Current word under cursor can be passed to the external executables or scripts, you can use it to look up current word in dictionary or manual with a single hotkey pressing:
+Current word under cursor can be passed to the external executables or scripts, you can use it to look up current word in dictionary or manual with a single hotkey stroke:
 
 ```cson
 {
