@@ -216,8 +216,8 @@ Atom-shell-commands has a special design in the output panel to speedup the edit
 | atom-shell-commands-config:stop | ctrl-alt-f4 | stop current command |
 | atom-shell-commands-config:error-first | ctrl-alt-f6 | go to the first error |
 | atom-shell-commands-config:error-last | ctrl-alt-f7 | go to the last error |
-| atom-shell-commands-config:error-next | ctrl-alt-=  | go to the next error |
-| atom-shell-commands-config:error-prev | ctrl-- | go to the previous error |
+| atom-shell-commands-config:error-next | ctrl-shift-]  | go to the next error |
+| atom-shell-commands-config:error-prev | ctrl-shift-[ | go to the previous error |
 
 This quickfix mode can be useful if you don't want to touch your mouse.
 
