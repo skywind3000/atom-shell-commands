@@ -16,9 +16,9 @@ Feature
 - Automatic create atom command for each shell command.
 - Keymap config allow you to make shortcut to each command.
 - Shell output (stdout/stderr) can be captured in the bottom panel.
-- To speedup edit-compile-edit cycle, click the filename in the output panel will open it.
+- Click the filename in the output panel will open it.
 - Regular expression to match filename and line number in the error output. 
-- All platform supported, well tested in Windows/Ubuntu/Mac OS X. 
+- Hotkeys to navigate errors one by one.
 - Fast and lightweight, loading time is less than 2 milliseconds (TimeCop). 
 
 Installation
@@ -137,7 +137,7 @@ exit
 
 Lookup word in manual
 
-Current word under cursor can be passed to the external executables or scripts, you can use it to look current word in dictionary or manual with a single hotkey pressing:
+Current word under cursor can be passed to the external executables or scripts, you can use it to look up current word in dictionary or manual with a single hotkey pressing:
 
 ```cson
 {
