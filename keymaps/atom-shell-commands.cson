@@ -7,3 +7,9 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+'atom-workspace':
+	'ctrl-alt-f4': 'atom-shell-commands-config:stop'
+	'ctrl-alt-f6': 'atom-shell-commands-config:error-first'
+	'ctrl-alt-f7': 'atom-shell-commands-config:error-last'
+	'ctrl-alt-=': 'atom-shell-commands-config:error-next'
+	'ctrl-alt--': 'atom-shell-commands-config:error-prev'
