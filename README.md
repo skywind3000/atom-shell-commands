@@ -14,9 +14,9 @@ Feature
 - Customize shell command to invoke compiler or other tools with active document/project.
 - Customize arguments, working directory and system environment of the command.
 - Automatic create atom command for each shell command.
-- User Keymap config can make shortcut to each shell command.
+- Keymap config allow you to make shortcut to each command.
 - Shell output (stdout/stderr) can be captured in the bottom panel.
-- Click the filename in the output bottom panel will open it.
+- To speedup edit-compile-edit cycle, click the filename in the output panel will open it.
 - Regular expression to match filename and line number in the error output. 
 - All platform supported, well tested in Windows/Ubuntu/Mac OS X. 
 - Fast and lightweight, loading time is less than 2 milliseconds (TimeCop). 
@@ -71,9 +71,10 @@ The `command`, `arguments` and `options` values accepts the variables below:
 | {CurRow}         | Current row(line number) where the cursor is located |
 | {CurCol}         | Current column index where the cursor is located |
 | {CurSelected}    | Selected text |
-| {CurLineText}    | Current line text |
+| {CurLineText}    | Current line text under cursor |
+| {CurWord}        | Current word under cursor |
 
-You can setup as many commands as you wish to build with your project makefile, or compile a single source file directly, or run grep in current directory, or just call svn diff with current file and redirect the output to the bottom panel.
+You can setup as many commands as you wish to build with your project makefile, or compile a single source file directly, or compile your latex, or run grep in current directory, passing current word under cursor to external man help / dictionary / other external scripts, or just call svn diff with current file and redirect the output to the bottom panel.
 
 
 The `options` field is an key/value object contains:
@@ -134,6 +135,23 @@ pause
 exit
 ```
 
+Lookup word in manual
+
+Current word under cursor can be passed to the external executables or scripts, you can use it to look current word in dictionary or manual with a single hotkey pressing:
+
+```cson
+{
+  name: "man"
+  command: "/usr/bin/man"
+  arguments: [
+      "{CurWord}"
+  ]
+  options:
+    cwd: "{FileDir}"
+    keymap: "ctrl-alt-m"
+}
+```
+
 Error Matching
 --------------
 
@@ -187,6 +205,19 @@ Example user config file which is using error matching:
 ```
 
 This will match the `file`, `line` and `col` in both clang/gcc or msvc error output.
+
+Predefined Commands
+-------------------
+
+Atom-shell-commands has a special design in the output panel to speedup the edit-compile-edit cycle.  This is inspired by the quickfix mode in vim. The idea is to save the error messages from the compiler and use builtin commands to jump to the errors one by one.  You can examine each problem and fix it, without having to remember all the error messages.
+
+| Command | Keymap | Description |
+|---------|--------|------|
+| atom-shell-commands-config:stop | ctrl-alt-f4 | stop current command |
+| atom-shell-commands-config:error-first | ctrl-alt-f6 | go to the first error |
+| atom-shell-commands-config:error-last | ctrl-alt-f7 | go to the last error |
+| atom-shell-commands-config:error-next | ctrl-alt-=  | go to the next error |
+| atom-shell-commands-config:error-prev | ctrl-- | go to the previous error |
 
 Misc
 ----
