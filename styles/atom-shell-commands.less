@@ -25,13 +25,8 @@
 	white-space: pre;
 }
 
-.stderr {
-	color: @text-color-warning;
-	white-space: pre;
-}
-
 .stdout-match {
-	color: @text-color;
+	color: @text-color-error;
 	white-space: pre;
 }
 
@@ -39,12 +34,38 @@
 	text-decoration: underline;
 }
 
-.stderr-match {
+.stdout-match-selected {
+	color: @text-color-error;
+	background-color: @background-color-highlight;
+	white-space: pre;	
+}
+
+.stdout-match-selected:hover {
+	text-decoration: underline;
+}
+
+
+.stderr {
 	color: @text-color-warning;
 	white-space: pre;
 }
 
+.stderr-match {
+	color: @text-color-error;
+	white-space: pre;
+}
+
 .stderr-match:hover {
+	text-decoration: underline;
+}
+
+.stderr-match-selected {
+	color: @text-color-error;
+	background-color: @background-color-highlight;
+	white-space: pre;
+}
+
+.stderr-match-selected:hover {	
 	text-decoration: underline;
 }
 

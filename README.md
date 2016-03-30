@@ -219,6 +219,8 @@ Atom-shell-commands has a special design in the output panel to speedup the edit
 | atom-shell-commands-config:error-next | ctrl-alt-=  | go to the next error |
 | atom-shell-commands-config:error-prev | ctrl-- | go to the previous error |
 
+This quickfix mode can be useful if you don't want to touch your mouse.
+
 Misc
 ----
 atom-shell-commands has been tested in windows, mac os and ubuntu. You can use 'open' in mac os or '/usr/bin/gnome-terminal' in ubuntu to open a new window and execute your command.

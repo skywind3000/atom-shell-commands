@@ -1,3 +1,7 @@
+## 1.3.0 - 2016/3/30
+* New '{CurWord}' macro to get the current word under cursor which can be used to pass a word to external manual or dictionary.
+* New quickfix mode in bottom output panel with direct command and hotkey to jump from one error to another without touching your mouse.
+
 ## 1.2.0 - 2016/3/17
 * Reduce loading time from 140ms to 2ms by using delay initializing and other optimizes.
 * Update document.
