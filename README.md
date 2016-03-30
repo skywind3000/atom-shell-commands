@@ -206,20 +206,28 @@ Example user config file which is using error matching:
 
 This will match the `file`, `line` and `col` in both clang/gcc or msvc error output.
 
-Predefined Commands
--------------------
+Quickfix
+--------
 
 Atom-shell-commands has a special design in the output panel to speedup the edit-compile-edit cycle.  This is inspired by the quickfix mode in vim. The idea is to save the error messages from the compiler and use builtin commands to jump to the errors one by one.  You can examine each problem and fix it, without having to remember all the error messages.
 
-| Command | Keymap | Description |
-|---------|--------|------|
-| atom-shell-commands-config:stop | ctrl-alt-f4 | stop current command |
-| atom-shell-commands-config:error-first | ctrl-alt-f6 | go to the first error |
-| atom-shell-commands-config:error-last | ctrl-alt-f7 | go to the last error |
-| atom-shell-commands-config:error-next | ctrl-shift-]  | go to the next error |
-| atom-shell-commands-config:error-prev | ctrl-shift-[ | go to the previous error |
+| Command | Description |
+|---------|-------|
+| atom-shell-commands-config:error-first | go to the first error |
+| atom-shell-commands-config:error-last | go to the last error |
+| atom-shell-commands-config:error-next | go to the next error |
+| atom-shell-commands-config:error-prev | go to the previous error |
 
-This quickfix mode can be useful if you don't want to touch your mouse.
+To avoid hotkey conflict to other packages, Atom-shell-commands has none predefined keymap, just leave the it to user. You can access them from `Atom Shell Commands` in `Packages` Menu, or from command palette directly. 
+
+The most efficient way is binding those commands to your keymap config. Set it up by simply adding few lines in ~/.atom/keymap.cson （or open it in the `File` menu):
+```cson
+'atom-workspace':
+    'shift-F9' : 'atom-shell-commands-config:error-next'
+    'shift-F10': 'atom-shell-commands-config:error-prev'
+```
+
+Now you can have F9/F10 to navigate errors without move your hand from keyboard to mouse/touch pad. 
 
 Misc
 ----
