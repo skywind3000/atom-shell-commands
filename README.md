@@ -18,7 +18,7 @@ Feature
 - Shell output (stdout/stderr) can be captured in the bottom panel.
 - Click the filename in the output panel will open it.
 - Regular expression to match filename and line number in the error output. 
-- Hotkeys to navigate errors one by one.
+- Hotkeys to navigate errors one by one just like quickfix in vim.
 - Fast and lightweight, loading time is less than 2 milliseconds (TimeCop). 
 
 Installation
@@ -218,16 +218,16 @@ Atom-shell-commands has a special design in the output panel to speedup the edit
 | atom-shell-commands-config:error-next | go to the next error |
 | atom-shell-commands-config:error-prev | go to the previous error |
 
-To avoid hotkey conflict to other packages, Atom-shell-commands has none predefined keymap, just leave the it to user. You can access them from `Atom Shell Commands` in `Packages` Menu, or from command palette directly. 
+To avoid hotkey conflict to other packages, Atom-shell-commands has none predefined keymap, just leave the it to user. You can trigger them from `Atom Shell Commands` menu under `Packages`, or from command palette directly. 
 
-The most efficient way is binding those commands to your keymap config. Set it up by simply adding few lines in ~/.atom/keymap.cson （or open it in the `File` menu):
+The most efficient way is binding to your keymap config by simply adding few lines in ~/.atom/keymap.cson （or open it in the `File` menu):
 ```cson
 'atom-workspace':
     'shift-F9' : 'atom-shell-commands-config:error-next'
     'shift-F10': 'atom-shell-commands-config:error-prev'
 ```
 
-Now you can have F9/F10 to navigate errors without move your hand from keyboard to mouse/touch pad. 
+Now you can have your F9/F10 to navigate errors without leaving your hand from keyboard to mouse/touch pad. 
 
 Misc
 ----
