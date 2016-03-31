@@ -223,8 +223,8 @@ To avoid hotkey conflict to other packages, Atom-shell-commands has none predefi
 The most efficient way is binding to your keymap config by simply adding few lines in ~/.atom/keymap.cson （or open it in the `File` menu):
 ```cson
 'atom-workspace':
-    'shift-F9' : 'atom-shell-commands-config:error-next'
-    'shift-F10': 'atom-shell-commands-config:error-prev'
+    'F9' : 'atom-shell-commands-config:error-next'
+    'F10': 'atom-shell-commands-config:error-prev'
 ```
 
 Now you can have your F9/F10 to navigate errors without leaving your hand from keyboard to mouse/touch pad. 
