@@ -1,3 +1,6 @@
+## 1.3.10 - 2016/4/1
+* Adjust the style of bottom output panel, make it more neat now.
+
 ## 1.3.0 - 2016/3/30
 * New '{CurWord}' macro to get the current word under cursor which can be  passed to external manual or dictionary.
 * New quickfix mode in bottom output panel with direct command and hotkey to jump from one error to another without touching your mouse.
