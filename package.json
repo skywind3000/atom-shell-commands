@@ -15,7 +15,6 @@
   ],
   "homepage": "https://github.com/skywind3000/atom-shell-commands",
   "dependencies": {
-    "win-spawn": "^2.0.0",
     "space-pen": "^4",
     "xregexp": "^2.0.0"
   },

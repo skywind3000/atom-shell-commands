@@ -1,3 +1,7 @@
+## 1.3.12 - 2016/4/3
+* Fixed: spawn failed in windows when command name contains space (eg. 'C:/program files (x86)/xxx')
+* Remove 'win-spawn' module which is really out-of-date and use 'child_process.spawn' directly 
+
 ## 1.3.10 - 2016/4/1
 * Adjust the style of bottom output panel, make it more neat now.
 
