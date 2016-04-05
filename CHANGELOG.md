@@ -1,3 +1,6 @@
+## 1.3.14 - 2016/4/5
+* Fixed: catch spawn error on a no exist command
+
 ## 1.3.13 - 2016/4/3
 * Fixed: spawn failed in windows when command name contains space (eg. 'C:/program files (x86)/xxx')
 * Remove 'win-spawn' module which is really out-of-date and use 'child_process.spawn' directly 
