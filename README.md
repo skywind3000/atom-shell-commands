@@ -83,6 +83,7 @@ The `options` field is an key/value object contains:
 |---------|------|-------|
 | cwd | *[optional]* | Working directory of the command |
 | save | *[optional]* | True or false(default) to save the current file before execute |
+| silent | *[optional]* | True or false(default); true will not show the message panel (if it's closed) when this command is run. |
 | keymap | *[optional]* | A keymap string as defined by Atom. Pressing this key combination will trigger the target. Examples: ctrl-alt-k or cmd-U. |
 | env | *[optional]* | Key/value based system environment setting |
 
