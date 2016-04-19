@@ -1,3 +1,7 @@
+## 1.3.15 - 2016/4/18
+* New: `silent` option to hide output panel by  [@damncabbage](https://github.com/damncabbage).
+* Fixed: toggle command issue, by [@damncabbage](https://github.com/damncabbage) again.
+
 ## 1.3.14 - 2016/4/5
 * Fixed: catch spawn error on a no exist command
 
