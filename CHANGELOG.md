@@ -1,3 +1,6 @@
+## 1.4.0 - 2016/5/17
+* New: `sound` option to play a sound file (wav/mp3/ogg) after command finished
+
 ## 1.3.15 - 2016/4/18
 * New: `silent` option to hide output panel by  [@damncabbage](https://github.com/damncabbage).
 * Fixed: toggle command issue, by [@damncabbage](https://github.com/damncabbage) again.

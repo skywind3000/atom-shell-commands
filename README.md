@@ -86,6 +86,7 @@ The `options` field is an key/value object contains:
 | silent | *[optional]* | True or false(default); true will not show the message panel (if it's closed) when this command is run. |
 | keymap | *[optional]* | A keymap string as defined by Atom. Pressing this key combination will trigger the target. Examples: ctrl-alt-k or cmd-U. |
 | env | *[optional]* | Key/value based system environment setting |
+| sound | *[optional]* | File path for a wav/mp3/ogg file which will be played to remind you that the job is finished |
 
 Examples
 --------
