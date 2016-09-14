@@ -17,7 +17,7 @@
   "dependencies": {
     "space-pen": "^4",
     "xregexp": "^2.0.0",
-    "atom-message-panel": "^1.2.5"
+	"atom-message-panel": "^1.2.4"
   },
   "author": {
     "name": "skywind3000"
@@ -29,5 +29,38 @@
   },
   "bugs": {
     "url": "https://github.com/skywind3000/atom-shell-commands/issues"
+  },
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "win-spawn",
+        "version": "2.0.0",
+        "path": "node_modules/win-spawn/index.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib/atom-shell-commands.js",
+        "lib/config.js",
+        "node_modules/win-spawn/index.js"
+      ],
+      ".json": [
+        "node_modules/win-spawn/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "menus",
+          ""
+        ],
+        "dependencies": {
+          "win-spawn": "^2.0.0"
+        }
+      }
+    ]
   }
 }
