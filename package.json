@@ -1,6 +1,6 @@
 {
   "name": "atom-shell-commands",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Customize shell commands. Similar to 'Run Commands' in NotePad++, 'User Tool' in EditPlus/UltraEdit, 'External Tool' in GEdit and 'Shell Commands' in TextMate.",
   "main": "./lib/atom-shell-commands",
   "keywords": [
@@ -17,7 +17,7 @@
   "dependencies": {
     "space-pen": "^4",
     "xregexp": "^2.0.0",
-	"atom-message-panel": "^1.2.4"
+    "atom-message-panel": "^1.2.4"
   },
   "author": {
     "name": "skywind3000"
