@@ -1,4 +1,4 @@
-## 1.4.5 - 2016/10/7
+## 1.5.0 - 2016/10/7
 * Fixed: options missing 'mode' issue (a new feature which is developing in progress)
 
 ## 1.4.0 - 2016/5/17
