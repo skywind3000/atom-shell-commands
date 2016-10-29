@@ -66,7 +66,7 @@ The `command`, `arguments` and `options` values accepts the variables below:
 | {FileDir}        | Full path of current document without the file name |
 | {FileExt}        | File extension of current document |
 | {FileNameNoExt}  | File name of current document without path and extension |
-| {MainProjectDir} | Current project directory |
+| {ProjectDir} | Current project directory |
 | {ProjectRel}     | File name relativize to current project directory |
 | {CurRow}         | Current row(line number) where the cursor is located |
 | {CurCol}         | Current column index where the cursor is located |
