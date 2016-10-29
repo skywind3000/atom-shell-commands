@@ -50,8 +50,8 @@ This will create the atom command "atom-shell-commands:compile" that you can now
 
 | Field | Mode | Description |
 |-------|----|---------|
-| `name` | **[required]** | The name of the target. Viewed in the menu | 
-| `command` | **[required]** | The executable command |
+| `name` | **[required]** | The name of the target. Viewed in the menu |
+| `command` | **[required]** | The executable command (if not in terminal mode, can be a relative path to a file) |
 | `auguments` | *[optional]* | An array of arguments for the command |
 | `selector` | *[optional]* | atom selector, default is 'atom-workspace' |
 | `matchs` | *[optional]* | regular expression to match file name in output |
@@ -66,7 +66,7 @@ The `command`, `arguments` and `options` values accepts the variables below:
 | {FileDir}        | Full path of current document without the file name |
 | {FileExt}        | File extension of current document |
 | {FileNameNoExt}  | File name of current document without path and extension |
-| {ProjectDir}     | Current project directory |
+| {MainProjectDir} | Current project directory |
 | {ProjectRel}     | File name relativize to current project directory |
 | {CurRow}         | Current row(line number) where the cursor is located |
 | {CurCol}         | Current column index where the cursor is located |
@@ -87,6 +87,17 @@ The `options` field is an key/value object contains:
 | keymap | *[optional]* | A keymap string as defined by Atom. Pressing this key combination will trigger the target. Examples: ctrl-alt-k or cmd-U. |
 | env | *[optional]* | Key/value based system environment setting |
 | sound | *[optional]* | File path for a wav/mp3/ogg file which will be played to remind you that the job is finished |
+| context | *[optional]* | String of flags indicating which circumstances the command can be run under |
+
+The `options.context` field string can contain any of the following flags:
+
+| Flag | Description |
+|------|-------------|
+| `f` | Requires an open file to be focused by the user |
+| `e` | Requires an editor to be focused by the user |
+| `p` | Requires the focused editor to have a cursor |
+
+*If no flags are specified, the command can always be called.*
 
 Examples
 --------

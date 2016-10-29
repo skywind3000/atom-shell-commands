@@ -42,7 +42,6 @@
     "extensions": {
       ".js": [
         "lib/atom-shell-commands.js",
-        "lib/config.js",
         "node_modules/win-spawn/index.js"
       ],
       ".json": [
