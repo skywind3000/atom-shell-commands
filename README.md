@@ -52,7 +52,7 @@ This will create the atom command "atom-shell-commands:compile" that you can now
 |-------|----|---------|
 | `name` | **[required]** | The name of the target. Viewed in the menu | 
 | `command` | **[required]** | The executable command |
-| `auguments` | *[optional]* | An array of arguments for the command |
+| `arguments` | *[optional]* | An array of arguments for the command |
 | `selector` | *[optional]* | atom selector, default is 'atom-workspace' |
 | `matchs` | *[optional]* | regular expression to match file name in output |
 | `options` | *[optional]* | additional options to config dir, environment, keymap etc |
