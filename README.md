@@ -1,6 +1,6 @@
 # atom-shell-commands package
 
-Customize shell commands for atom. Similar to 'Run Commands' in NotePad++, 'User Tool' in EditPlus/UltraEdit, 'External Tool' in GEdit and 'Shell Commands' in TextMate. 
+Customize shell commands for atom. Similar to 'Run Commands' in NotePad++, 'User Tool' in EditPlus/UltraEdit, 'External Tool' in GEdit and 'Shell Commands' in TextMate.
 
 Preface
 -------
@@ -17,9 +17,9 @@ Feature
 - Keymap config allow you to make shortcut to each command.
 - Shell output (stdout/stderr) can be captured in the bottom panel.
 - Click the filename in the output panel will open it.
-- Regular expression to match filename and line number in the error output. 
+- Regular expression to match filename and line number in the error output.
 - Hotkeys to navigate errors one by one just like quickfix in vim.
-- Fast and lightweight, loading time is less than 2 milliseconds (TimeCop). 
+- Fast and lightweight, loading time is less than 2 milliseconds (TimeCop).
 
 Installation
 ------------
@@ -31,7 +31,7 @@ Setup
 Configure commands on your config file (File->Open Your Config, or ~/.atom/config.cson) like this, add 'atom-shell-commands' in your user config file:
 ```cson
   "atom-shell-commands":
-    commands: [
+    commandsList: [
       {
         name: "compile"
         command: "d:/dev/mingw/bin/gcc"
@@ -50,7 +50,7 @@ This will create the atom command "atom-shell-commands:compile" that you can now
 
 | Field | Mode | Description |
 |-------|----|---------|
-| `name` | **[required]** | The name of the target. Viewed in the menu | 
+| `name` | **[required]** | The name of the target. Viewed in the menu |
 | `command` | **[required]** | The executable command |
 | `auguments` | *[optional]* | An array of arguments for the command |
 | `selector` | *[optional]* | atom selector, default is 'atom-workspace' |
@@ -184,7 +184,7 @@ Example user config file which is using error matching:
 ```cson
 *:
   "atom-shell-commands":
-    commands: [
+    commandsList: [
       {
         name: "compile"
         command: "d:/dev/mingw/bin/gcc"
@@ -220,7 +220,7 @@ Atom-shell-commands has a special design in the output panel to speedup the edit
 | atom-shell-commands-config:error-next | go to the next error |
 | atom-shell-commands-config:error-prev | go to the previous error |
 
-To avoid hotkey conflict to other packages, Atom-shell-commands has none predefined keymap, just leave the it to user. You can trigger them from `Atom Shell Commands` menu under `Packages`, or from command palette directly. 
+To avoid hotkey conflict to other packages, Atom-shell-commands has none predefined keymap, just leave the it to user. You can trigger them from `Atom Shell Commands` menu under `Packages`, or from command palette directly.
 
 The most efficient way is binding to your keymap config by simply adding few lines in ~/.atom/keymap.cson （or open it in the `File` menu):
 ```cson
@@ -229,11 +229,11 @@ The most efficient way is binding to your keymap config by simply adding few lin
     'F10': 'atom-shell-commands-config:error-prev'
 ```
 
-Now you can have your F9/F10 to navigate errors without leaving your hand from keyboard to mouse/touch pad. 
+Now you can have your F9/F10 to navigate errors without leaving your hand from keyboard to mouse/touch pad.
 
 Misc
 ----
-atom-shell-commands has been tested in windows, mac os and ubuntu. You can use 'open' in mac os or '/usr/bin/gnome-terminal' in ubuntu to open a new window and execute your command. 
+atom-shell-commands has been tested in windows, mac os and ubuntu. You can use 'open' in mac os or '/usr/bin/gnome-terminal' in ubuntu to open a new window and execute your command.
 
 As executing program in a new terminal window correctly is a little tricky thing, I create a script to let you open a new terminal window to execute your program in both Windows, Linux (ubuntu), Cygwin and Mac OS X, you can try it from: https://github.com/skywind3000/terminal.
 
@@ -250,6 +250,3 @@ Reference
 - [https://github.com/joefitzgerald/go-plus](https://github.com/joefitzgerald/go-plus) (referenced).
 - [https://github.com/noseglid/atom-build](https://github.com/noseglid/atom-build) (referenced).
 - [https://github.com/ksxatompackages/cmd-exec](https://github.com/ksxatompackages/cmd-exec) (referenced).
-
-
-
